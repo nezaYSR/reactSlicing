@@ -1,0 +1,49 @@
+@mixin fontBold {
+    font-family: Nunito-Bold;
+    font-size: 14px;
+}
+
+@mixin row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+@include breakpoint(mobile) {
+    .header-section {
+        .header-title {
+            display: none;
+        }
+        .header-container {
+            display: none;
+        }
+    }
+}
+@include breakpoint(tablet) {
+}
+
+@include breakpoint(laptops) {
+    .footer-section {
+        // margin-top: 50px;
+        width: 100%;
+        &-heroBG {
+            z-index: -1 !important;
+            position: absolute;
+            bottom: -250px;
+            height: 30em;
+            object-fit: cover;
+            width: 100%;
+        }
+
+        .footer-left {
+            position: absolute;
+            bottom: -60px;
+            &-top {
+                display: flex;
+                flex-direction: row;
+                &-hosting {
+                }
+            }
+        }
+    }
+}
