@@ -18,7 +18,7 @@ const Footer = () => {
     return (
         <Fragment>
             <div className="footer-section">
-                <img className="footer-section-heroBG" src={footer} alt="bottom background" />
+                {/* <img className="footer-section-heroBG" src={footer} alt="bottom background" /> */}
 
                 <div className="footer-content-top">
                     <div className="footer-left">

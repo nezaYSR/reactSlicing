@@ -9,9 +9,106 @@
     align-items: center;
 }
 
+.swiper-container {
+    width: 640px;
+}
+
+@media screen and (min-width: 320px) {
+    .swiper-container {
+        width: 320px;
+    }
+}
+
+// @media screen and (min-width: 768px) {
+//     .swiper-container {
+//         width: 60rem;
+//         padding-left: 100px;
+//     }
+// }
+
 @include breakpoint(mobile) {
 }
 @include breakpoint(tablet) {
 }
 @include breakpoint(laptops) {
+    .swiper-container {
+        // width: 768px;
+        width: 51rem;
+        // width: 100%;
+        padding-left: 40px;
+    }
+    .swiper-slide {
+        align-items: flex-start;
+        // width: 100%;
+        .slide {
+            // border: aqua 1px solid;
+            width: 355px;
+        }
+    }
+    .my-custom-pagination-div {
+        margin-top: 50px;
+    }
+    .valuedCostumer-section {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: 40em;
+        background-color: $light-secondary-color;
+        padding: 8% 10%;
+        &-title {
+            align-self: center;
+            margin-bottom: 50px;
+            h1 {
+                font-family: Nunito-Bold;
+                font-size: 24px;
+                margin-bottom: 5px;
+                text-align: center;
+            }
+            p {
+                font-family: Nunito-Regular;
+                font-size: 16px;
+                text-align: center;
+            }
+        }
+        &-dot {
+            img {
+                height: 200px;
+            }
+            :nth-child(1) {
+                position: absolute;
+                top: 490px;
+                left: 10px;
+            }
+            :nth-child(2) {
+                position: absolute;
+                top: -50px;
+                right: 0;
+            }
+        }
+        &-slide {
+            // :nth-child(odd) {
+            // }
+            .slide {
+                display: flex;
+                align-items: flex-start;
+                font-family: Nunito-Light;
+                font-size: 16px;
+                &-left {
+                    margin-right: 15px;
+                    img {
+                        height: 100px;
+                    }
+                }
+                &-right {
+                    &-stars {
+                        padding-top: 15px;
+                        margin-bottom: 10px;
+                    }
+                    p {
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
 }

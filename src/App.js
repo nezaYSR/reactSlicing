@@ -11,6 +11,8 @@ import Footer from "./components/layouts/footer";
 import WhatWill from "./components/pages/home/what-will";
 import DontKnow from "./components/pages/home/dont-know";
 import HostingTypes from "./components/pages/home/hosting-types";
+import ValuedCostumer from "./components/pages/home/valued-costumer";
+import OurClients from "./components/pages/home/our-clients";
 
 
 function App() {
@@ -20,7 +22,9 @@ function App() {
       <WhatWill />
       <DontKnow />
       <HostingTypes />
-      {/* <Footer /> */}
+      <ValuedCostumer />
+      <OurClients />
+      <Footer />
     </Router>
   );
 }

@@ -44,18 +44,23 @@
 
 @include breakpoint(laptops) {
     .footer-section {
-        position: absolute;
-        bottom: 0;
+        position: relative;
+        // padding-bottom: -20px;
+        margin-bottom: -100px;
+        background-image: url(../../../assets/images/footer.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        // bottom: 0;
         width: 100%;
-        &-heroBG {
-            z-index: -1 !important;
-            position: absolute;
-            bottom: 0;
-            // bottom: -250px;
-            height: 30em;
-            object-fit: cover;
-            width: 100%;
-        }
+        // &-heroBG {
+        //     z-index: -1 !important;
+        //     position: absolute;
+        //     bottom: 0;
+        //     // bottom: -250px;
+        //     height: 30em;
+        //     object-fit: cover;
+        //     width: 100%;
+        // }
         .footer-content-top {
             display: flex;
             align-items: flex-start;

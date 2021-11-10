@@ -38,6 +38,7 @@ const HostingTypes = () => {
                         Our service is always affordable for everyone.
                     </p>
                 </div>
+
                 <div className="hostingTypes-section-bottom">
 
                     <div className="hostingTypes-section-bottom-card">
@@ -51,7 +52,7 @@ const HostingTypes = () => {
                         <p>Get started at</p>
                         <span>
                             $15.99/
-                            <p>month</p>
+                            <p>monthjsaaaaaaaaa</p>
                         </span>
                         <div className="hostingTypes-section-bottom-card-btn">
                             <ThemeProvider theme={theme}>
