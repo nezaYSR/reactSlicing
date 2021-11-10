@@ -11,11 +11,11 @@
 @import "sass/components/layouts/searchbar";
 
 // PAGES
-// @import "sass/components/pages/dev";
-// @import "sass/components/pages/exhibition";
-// @import "sass/components/pages/home";
-// @import "sass/components/pages/industrial";
-// @import "sass/components/pages/aboutme";
+@import "sass/components/pages/home/what-will";
+@import "sass/components/pages/home/dont-know";
+@import "sass/components/pages/home/hosting-types";
+@import "sass/components/pages/home/valued-costumer";
+@import "sass/components/pages/home/our-clients";
 
 // BANNERS
 // @import "sass/components/banners/home-banner";

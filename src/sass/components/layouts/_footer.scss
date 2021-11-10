@@ -44,12 +44,14 @@
 
 @include breakpoint(laptops) {
     .footer-section {
-        // margin-top: 50px;
+        position: absolute;
+        bottom: 0;
         width: 100%;
         &-heroBG {
             z-index: -1 !important;
             position: absolute;
-            bottom: -250px;
+            bottom: 0;
+            // bottom: -250px;
             height: 30em;
             object-fit: cover;
             width: 100%;
@@ -59,11 +61,12 @@
             align-items: flex-start;
             justify-content: space-between;
             position: relative;
-            bottom: -800px;
+            bottom: 50px;
+            // bottom: -800px;
             padding: 0 10%;
             .footer-left {
-                // position: absolute;
-                bottom: -120px;
+                // position: relative;
+                // bottom: -120px;
                 &-top {
                     display: flex;
                     flex-direction: row;
@@ -117,7 +120,8 @@
             align-items: baseline;
             justify-content: space-between;
             position: relative;
-            bottom: -780px;
+            bottom: 50px;
+            // bottom: -780px;
             padding: 0 10%;
             .footer-left-bottom {
                 p {
@@ -131,6 +135,7 @@
                 &-socmed {
                     display: flex;
                     flex-direction: column;
+
                     ul {
                         display: flex;
                         justify-content: flex-end;
@@ -150,6 +155,14 @@
                     span {
                         display: flex;
                         justify-content: flex-end;
+                        align-items: baseline;
+                        a {
+                            color: $base-color;
+                            font-family: Nunito-Regular;
+                            font-size: 14px;
+                            text-decoration: none;
+                            margin-left: 10px;
+                        }
                         p {
                             margin-top: 15px;
                             margin-left: 10px;

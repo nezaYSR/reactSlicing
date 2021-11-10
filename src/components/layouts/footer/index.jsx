@@ -132,9 +132,9 @@ const Footer = () => {
                                 </li>
                             </ul>
                             <span>
-                                <p>Terms of  Service</p>
+                                <a href="">Terms of  Service</a>
                                 <p>|</p>
-                                <p>Privacy Policy</p>
+                                <a href="">Privacy Policy</a>
                             </span>
                         </div>
                     </div>

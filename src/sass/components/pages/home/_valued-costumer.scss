@@ -1,0 +1,17 @@
+@mixin fontBold {
+    font-family: Nunito-Bold;
+    font-size: 14px;
+}
+
+@mixin row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+@include breakpoint(mobile) {
+}
+@include breakpoint(tablet) {
+}
+@include breakpoint(laptops) {
+}
