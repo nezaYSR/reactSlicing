@@ -24,6 +24,7 @@
 @include breakpoint(laptops) {
     .header-section {
         width: 100%;
+        // padding: 0 5%;
         &-heroBG {
             position: absolute;
             top: -220px;
@@ -37,7 +38,7 @@
             @include row();
             justify-content: space-around;
             position: relative;
-            padding: 0 5%;
+            // padding: 0 5%;
             .header-title {
                 position: relative;
                 top: -45px;

@@ -1,6 +1,26 @@
-@mixin fontBold {
-    font-family: Nunito-Bold;
-    font-size: 14px;
+@mixin perComponent {
+    h3 {
+        font-family: Nunito-Bold;
+        color: $base-color;
+        margin-bottom: 15px;
+        font-size: 16px;
+    }
+    ul {
+        li {
+            list-style: none;
+            margin-bottom: 5px;
+            margin-right: 70px;
+            a {
+                font-family: Nunito-Regular;
+                font-size: 14px;
+                color: $base-color;
+                text-decoration: none;
+                &:hover {
+                    font-family: Nunito-Bold;
+                }
+            }
+        }
+    }
 }
 
 @mixin row {
@@ -34,14 +54,110 @@
             object-fit: cover;
             width: 100%;
         }
+        .footer-content-top {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            position: relative;
+            bottom: -800px;
+            padding: 0 10%;
+            .footer-left {
+                // position: absolute;
+                bottom: -120px;
+                &-top {
+                    display: flex;
+                    flex-direction: row;
+                    &-hosting {
+                        @include perComponent();
+                    }
+                    &-features {
+                        @include perComponent();
+                    }
+                    &-support {
+                        @include perComponent();
+                    }
+                }
+            }
+            .footer-right {
+                &-top {
+                    h3 {
+                        font-family: Nunito-Bold;
+                        color: $base-color;
+                        margin-bottom: 15px;
+                        font-size: 16px;
+                    }
+                    ul {
+                        display: flex;
+                        align-items: center;
+                        :nth-child(1) {
+                            .footer-vendor {
+                                height: 45px;
+                                // margin-right: 20px;
+                            }
+                        }
+                        :nth-child(4) {
+                            .footer-vendor {
+                                margin-right: -20px !important;
+                            }
+                        }
+                        li {
+                            list-style: none;
+                            .footer-vendor {
+                                height: 30px;
+                                margin-right: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
 
-        .footer-left {
-            position: absolute;
-            bottom: -60px;
-            &-top {
-                display: flex;
-                flex-direction: row;
-                &-hosting {
+        .footer-content-bottom {
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+            position: relative;
+            bottom: -780px;
+            padding: 0 10%;
+            .footer-left-bottom {
+                p {
+                    color: $base-color;
+                    font-family: Nunito-Regular;
+                    font-size: 14px;
+                }
+            }
+            .footer-right-bottom {
+                margin-top: 70px;
+                &-socmed {
+                    display: flex;
+                    flex-direction: column;
+                    ul {
+                        display: flex;
+                        justify-content: flex-end;
+                        li {
+                            list-style: none;
+                            margin-left: 10px;
+                            a {
+                                img {
+                                    height: 15px;
+                                }
+                                // :hover {
+                                //     height: 20px;
+                                // }
+                            }
+                        }
+                    }
+                    span {
+                        display: flex;
+                        justify-content: flex-end;
+                        p {
+                            margin-top: 15px;
+                            margin-left: 10px;
+                            color: $base-color;
+                            font-family: Nunito-Regular;
+                            font-size: 14px;
+                        }
+                    }
                 }
             }
         }

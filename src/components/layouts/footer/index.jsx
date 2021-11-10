@@ -19,63 +19,93 @@ const Footer = () => {
         <Fragment>
             <div className="footer-section">
                 <img className="footer-section-heroBG" src={footer} alt="bottom background" />
-                <div className="footer-left">
 
-                    <div className="footer-left-top">
-                        <div className="footer-left-top-hosting">
-                            <h3>HOSTING</h3>
-                            <ul>
-                                <li>
-                                    <a href="">Shared Hosting</a>
-                                </li>
-                                <li>
-                                    <a href="">VPS Hosting</a>
-                                </li>
-                                <li>
-                                    <a href="">Cloud Hosting</a>
-                                </li>
-                                <li>
-                                    <a href="">Wordpress Hosting</a>
-                                </li>
-                            </ul>
+                <div className="footer-content-top">
+                    <div className="footer-left">
+
+                        <div className="footer-left-top">
+                            <div className="footer-left-top-hosting">
+                                <h3>HOSTING</h3>
+                                <ul>
+                                    <li>
+                                        <a href="">Shared Hosting</a>
+                                    </li>
+                                    <li>
+                                        <a href="">VPS Hosting</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Cloud Hosting</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Wordpress Hosting</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div className="footer-left-top-features">
+                                <h3>FEATURES</h3>
+                                <ul>
+                                    <li>
+                                        <a href="">Beginner Guide</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Move to Servion</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Website Builder</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Tools and Resources</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div className="footer-left-top-support">
+                                <h3>SUPPORT</h3>
+                                <ul>
+                                    <li>
+                                        <a href="">Help Center</a>
+
+                                    </li>
+                                    <li>
+                                        <a href="">Submit a Ticket</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Contact Us</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Blog</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
 
-                        <div className="footer-left-top-features">
-                            <h3>FEATURES</h3>
-                            <ul>
-                                <li>
-                                    <a href="">Beginner Guide</a>
-                                </li>
-                                <li>
-                                    <a href="">Move to Servion</a>
-                                </li>
-                                <li>
-                                    <a href="">Website Builder</a>
-                                </li>
-                                <li>
-                                    <a href="">Tools and Resources</a>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div className="footer-left-top-support">
-                            <h3>SUPPORT</h3>
-                            <ul>
-                                <li>
-                                    Help Center
-                                </li>
-                                <li>
-                                    Submit a Ticket
-                                </li>
-                                <li>
-                                    Contact Us
-                                </li>
-                                <li>
-                                    Blog
-                                </li>
-                            </ul>
-                        </div>
                     </div>
+
+                    <div className="footer-right">
+                        <div className="footer-right-top">
+                            <h3>WE ACCEPT</h3>
+                            <ul>
+                                <li >
+                                    <img className="footer-vendor" src={group103} alt="visa logo" />
+                                </li>
+                                <li >
+                                    <img className="footer-vendor" src={group105} alt="mastercard logo" />
+                                </li>
+                                <li >
+                                    <img className="footer-vendor" src={group104} alt="union logo" />
+                                </li>
+                                <li >
+                                    <img className="footer-vendor" src={group106} alt="rectangle logo" />
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div className="footer-content-bottom">
 
                     <div className="footer-left-bottom">
                         <img src={mainLogo} alt="main logo" />
@@ -84,41 +114,21 @@ const Footer = () => {
                             USA
                         </p>
                     </div>
-
-                </div>
-
-                <div className="footer-right">
-                    <div className="footer-right-top">
-                        <h3>WE ACCEPT</h3>
-                        <ul>
-                            <li className="footer-right-top-vendor">
-                                <img src={group103} alt="visa logo" />
-                            </li>
-                            <li className="footer-right-top-vendor">
-                                <img src={group105} alt="mastercard logo" />
-                            </li>
-                            <li className="footer-right-top-vendor">
-                                <img src={group104} alt="union logo" />
-                            </li>
-                            <li className="footer-right-top-vendor">
-                                <img src={group106} alt="rectangle logo" />
-                            </li>
-                        </ul>
-                    </div>
                     <div className="footer-right-bottom">
                         <div className="footer-right-bottom-socmed">
                             <ul>
                                 <li className="footer-right-bottom-socmed-logo">
-                                    <img src={ig} alt="ig logo" />
+                                    <a href=""><img src={ig} alt="ig logo" /></a>
+
                                 </li>
                                 <li className="footer-right-bottom-socmed-logo">
-                                    <img src={tw} alt="ig logo" />
+                                    <a href=""><img src={tw} alt="ig logo" /></a>
                                 </li>
                                 <li className="footer-right-bottom-socmed-logo">
-                                    <img src={yt} alt="ig logo" />
+                                    <a href=""> <img src={yt} alt="ig logo" /></a>
                                 </li>
                                 <li className="footer-right-bottom-socmed-logo">
-                                    <img src={fb} alt="ig logo" />
+                                    <a href=""><img src={fb} alt="ig logo" /></a>
                                 </li>
                             </ul>
                             <span>
