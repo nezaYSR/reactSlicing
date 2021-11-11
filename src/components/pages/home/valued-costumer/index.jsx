@@ -58,8 +58,8 @@ const ValuedCostumer = () => {
                             // when window width is >= 640px
                             640: {
                                 width: 640,
-                                slidesPerView: 2,
-                                slidesPerGroup: 1
+                                slidesPerView: 1,
+                                slidesPerGroup: 1,
                             },
                             // when window width is >= 768px
                             768: {
@@ -68,6 +68,12 @@ const ValuedCostumer = () => {
                                 slidesPerGroup: 1,
                                 spaceBetween: 40
                             },
+                            // 1024: {
+                            //     width: 1024,
+                            //     slidesPerView: 2,
+                            //     slidesPerGroup: 1,
+                            //     // spaceBetween: 40
+                            // },
                         }}
                         className="mySwiper">
                         <div class="my-custom-pagination-div" />

@@ -1,15 +1,14 @@
 import React, { useState, Fragment } from "react";
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
-import Box from '@mui/material/Box';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
-import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
+
 
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
-import { withRouter, Link } from "react-router-dom";
+import { withRouter } from "react-router-dom";
 
 
 // IMAGES
@@ -31,6 +30,12 @@ const theme = createTheme({
         },
     },
 });
+
+
+const Placeholder = ({ children }) => {
+    return <div >{children}</div>;
+};
+
 
 const SearchBar = () => {
     const [domain, setDomain] = React.useState('.com');
@@ -81,14 +86,17 @@ const SearchBar = () => {
                                 <FormControl id="select-basic" size="small" sx={{ minWidth: 100 }}>
                                     <Select
                                         value={domain}
+                                        defaultValue={domain}
                                         onChange={handleChange}
                                         displayEmpty
-                                        classes={{
-                                            root: styles.whiteColor,
-                                            icon: styles.whiteColor
-                                        }}
+                                        style={{ color: '#FFFFFF' }}
+                                        renderValue={
+                                            domain !== ".com" ? undefined : () => <Placeholder>.com</Placeholder>
+                                        }
                                     >
-                                        <MenuItem value="">
+                                        <MenuItem value="" disabled
+
+                                        >
                                             <em>.com</em>
                                         </MenuItem>
                                         <MenuItem value={10}>.net</MenuItem>
