@@ -44,34 +44,23 @@
 
 @include breakpoint(laptops) {
     .footer-section {
-        position: relative;
-        // padding-bottom: -20px;
+        // position: relative;
         margin-bottom: -100px;
+        // margin-bottom: -200px;
         background-image: url(../../../assets/images/footer.png);
         background-repeat: no-repeat;
-        background-size: 100%;
-        // bottom: 0;
+        // background-size: 100% 400px;
+        height: 450px;
+        // padding-top: -200px;
         width: 100%;
-        // &-heroBG {
-        //     z-index: -1 !important;
-        //     position: absolute;
-        //     bottom: 0;
-        //     // bottom: -250px;
-        //     height: 30em;
-        //     object-fit: cover;
-        //     width: 100%;
-        // }
         .footer-content-top {
             display: flex;
             align-items: flex-start;
             justify-content: space-between;
             position: relative;
-            bottom: 50px;
-            // bottom: -800px;
+            bottom: -130px;
             padding: 0 10%;
             .footer-left {
-                // position: relative;
-                // bottom: -120px;
                 &-top {
                     display: flex;
                     flex-direction: row;
@@ -125,8 +114,7 @@
             align-items: baseline;
             justify-content: space-between;
             position: relative;
-            bottom: 50px;
-            // bottom: -780px;
+            bottom: -120px;
             padding: 0 10%;
             .footer-left-bottom {
                 p {
