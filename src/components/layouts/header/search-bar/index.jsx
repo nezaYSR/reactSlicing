@@ -78,7 +78,7 @@ const SearchBar = () => {
                                             color: '#e9e9e9'
                                         }
                                     }} />
-                                <FormControl id="select-basic" size="small" sx={{ minWidth: 120 }}>
+                                <FormControl id="select-basic" size="small" sx={{ minWidth: 100 }}>
                                     <Select
                                         value={domain}
                                         onChange={handleChange}
