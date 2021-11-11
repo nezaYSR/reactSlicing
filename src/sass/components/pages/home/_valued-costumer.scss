@@ -27,6 +27,87 @@
 // }
 
 @include breakpoint(mobile) {
+    .swiper-container {
+        width: 100%;
+        padding-left: 80px;
+    }
+    .swiper-slide {
+        align-items: flex-start;
+        width: 100%;
+        .slide {
+            // border: aqua 1px solid;
+            width: 155px;
+        }
+    }
+    .my-custom-pagination-div {
+        margin-top: 50px;
+    }
+    .valuedCostumer-section {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        // height: 30em;
+        background-color: $light-secondary-color;
+        padding: 10%;
+        &-title {
+            align-self: center;
+            margin-bottom: 50px;
+            margin-top: 30px;
+            h1 {
+                font-family: Nunito-Bold;
+                font-size: 24px;
+                margin-bottom: 5px;
+                text-align: center;
+            }
+            p {
+                font-family: Nunito-Regular;
+                font-size: 16px;
+                text-align: center;
+            }
+        }
+        &-dot {
+            img {
+                height: 100px;
+            }
+            :nth-child(1) {
+                position: absolute;
+                top: 570px;
+                left: 10px;
+            }
+            :nth-child(2) {
+                position: absolute;
+                top: -50px;
+                right: 0;
+            }
+        }
+        &-slide {
+            // :nth-child(odd) {
+            // }
+            .slide {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-family: Nunito-Light;
+                font-size: 16px;
+                &-left {
+                    margin-right: 15px;
+                    img {
+                        height: 100px;
+                    }
+                }
+                &-right {
+                    &-stars {
+                        padding-top: 15px;
+                        margin-bottom: 10px;
+                    }
+                    p {
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
 }
 @include breakpoint(tablet) {
 }

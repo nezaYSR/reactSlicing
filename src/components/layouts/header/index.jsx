@@ -1,7 +1,8 @@
-import React, { useState, Fragment } from "react";
+import React, { useState, Fragment, useCallback } from "react";
 import Button from '@mui/material/Button';
 import PersonIcon from '@mui/icons-material/Person';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { HamburgerSlider } from 'react-animated-burgers'
 
 import { withRouter, Link } from "react-router-dom";
 
@@ -28,6 +29,41 @@ const theme = createTheme({
 });
 
 const Header = () => {
+    const [isActive, setIsActive] = useState(false)
+
+    const toggleButton = useCallback(
+        () => setIsActive(prevState => !prevState),
+        [],
+    )
+
+    const renderBurger = () => {
+        return (
+
+            <>
+                <div className="header-burgerOpen">
+                    <ul >
+                        <li>
+                            <Link href='/'>Services</Link>
+                        </li>
+
+                        <li>
+                            <Link href='/'>Our plans</Link>
+                        </li>
+
+                        <li>
+                            <Link href='/'>Tools & Resources</Link>
+                        </li>
+                        <hr />
+                        <p>
+                            created by Neza Yasser
+                        </p>
+                    </ul>
+                </div>
+            </>
+
+        )
+    }
+
     return (
         <Fragment>
             <div className="header-section">
@@ -77,11 +113,19 @@ const Header = () => {
                         </ThemeProvider>
                     </ul>
 
+                    <div className="header-burger">
+                        <HamburgerSlider
+                            barColor="white"
+                            {...{ isActive, toggleButton }}
+                        />
+                    </div>
+
+                    {isActive == true ? renderBurger() : null}
+
                 </div>
 
                 <SearchBar />
 
-                {/* <BurgerMenu /> */}
             </div>
         </Fragment>
     );
