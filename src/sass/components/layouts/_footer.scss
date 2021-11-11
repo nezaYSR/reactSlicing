@@ -44,9 +44,7 @@
 
 @include breakpoint(laptops) {
     .footer-section {
-        // position: relative;
         margin-bottom: -100px;
-        // margin-bottom: -200px;
         background-image: url(../../../assets/images/footer.png);
         background-repeat: no-repeat;
         // background-size: 100% 400px;

@@ -27,6 +27,11 @@ const theme = createTheme({
 });
 
 const HostingTypes = () => {
+    const [show, setShow] = useState(false)
+    const [show1, setShow1] = useState(false)
+    const [show2, setShow2] = useState(false)
+    const [show3, setShow3] = useState(false)
+
     return (
         <Fragment>
             <div className="hostingTypes-section">
@@ -41,97 +46,130 @@ const HostingTypes = () => {
 
                 <div className="hostingTypes-section-bottom">
 
-                    <div className="hostingTypes-section-bottom-card">
-                        <img src={shared} alt="shared icon" />
-                        <h3>SHARED HOSTING</h3>
-                        <p>
-                            Increase the rank of your <br />
-                            website by the higher speed
-                        </p>
+                    <div onMouseEnter={() => setShow(!show)}
+                        onMouseLeave={() => setShow(false)}
+                        className={show == true ? "hostingTypes-section-bottom-card" : "hostingTypes-section-bottom-card-hide"}
+                    >
+                        <div className="hostingTypes-section-bottom-card-top">
+
+                            <img src={shared} alt="shared icon" />
+                            <h3>SHARED HOSTING</h3>
+                            <p>
+                                Increase the rank of your <br />
+                                website by the higher speed
+                            </p>
+                        </div>
                         <hr />
-                        <p>Get started at</p>
-                        <span>
-                            $15.99/
-                            <p>monthjsaaaaaaaaa</p>
-                        </span>
-                        <div className="hostingTypes-section-bottom-card-btn">
-                            <ThemeProvider theme={theme}>
-                                <Button color="neutral" variant="contained" endIcon={<ArrowForwardIosIcon />}>
-                                    COSTUMISE PLAN
-                                </Button>
-                            </ThemeProvider>
+                        <div className="hostingTypes-section-bottom-card-bottom">
+                            <p>Get started at</p>
+                            <span>
+                                $15.99/
+                                <p>month</p>
+                            </span>
+                            <div className="hostingTypes-section-bottom-card-bottom-btn">
+                                <ThemeProvider theme={theme}>
+                                    <Button color="neutral" variant="contained" endIcon={<ArrowForwardIosIcon />}>
+                                        COSTUMISE PLAN
+                                    </Button>
+                                </ThemeProvider>
+                            </div>
                         </div>
                     </div>
 
-                    <div className="hostingTypes-section-bottom-card">
-                        <img src={vps} alt="vps icon" />
-                        <h3>VPS HOSTING</h3>
-                        <p>
-                            Be able to conceal your ID<br />
-                            whenever needed
-                        </p>
+                    <div onMouseEnter={() => setShow1(!show)}
+                        onMouseLeave={() => setShow1(false)}
+                        className={show1 == true ? "hostingTypes-section-bottom-card" : "hostingTypes-section-bottom-card-hide"}
+                    >
+                        <div className="hostingTypes-section-bottom-card-top">
+
+                            <img src={vps} alt="vps icon" />
+                            <h3>VPS HOSTING</h3>
+                            <p>
+                                Be able to conceal your ID<br />
+                                whenever needed
+                            </p>
+                        </div>
                         <hr />
-                        <p>Get started at</p>
-                        <span>
-                            $8.99/
-                            <p>month</p>
-                        </span>
-                        <div className="hostingTypes-section-bottom-card-btn">
-                            <ThemeProvider theme={theme}>
-                                <Button color="neutral" variant="contained" endIcon={<ArrowForwardIosIcon />}>
-                                    COSTUMISE PLAN
-                                </Button>
-                            </ThemeProvider>
+                        <div className="hostingTypes-section-bottom-card-bottom">
+                            <p>Get started at</p>
+                            <span>
+                                $8.99/
+                                <p>month</p>
+                            </span>
+                            <div className="hostingTypes-section-bottom-card-bottom-btn">
+                                <ThemeProvider theme={theme}>
+                                    <Button color="neutral" variant="contained" endIcon={<ArrowForwardIosIcon />}>
+                                        COSTUMISE PLAN
+                                    </Button>
+                                </ThemeProvider>
+                            </div>
                         </div>
                     </div>
 
-                    <div className="hostingTypes-section-bottom-card">
-                        <img src={cloud} alt="shared icon" />
-                        <h3>CLOUD HOSTING</h3>
-                        <p>
-                            Super convenient and highly <br />
-                            costumizable option
-                        </p>
+                    <div onMouseEnter={() => setShow2(!show)}
+                        onMouseLeave={() => setShow2(false)}
+                        className={show2 == true ? "hostingTypes-section-bottom-card" : "hostingTypes-section-bottom-card-hide"}
+                    >
+                        <div className="hostingTypes-section-bottom-card-top">
+
+                            <img src={cloud} alt="vps icon" />
+                            <h3>CLOUD HOSTING</h3>
+                            <p>
+                                Super convenient and highly <br />
+                                costumizable option
+                            </p>
+                        </div>
                         <hr />
-                        <p>Get started at</p>
-                        <span>
-                            $7.99/
-                            <p>month</p>
-                        </span>
-                        <div className="hostingTypes-section-bottom-card-btn">
-                            <ThemeProvider theme={theme}>
-                                <Button color="neutral" variant="contained" endIcon={<ArrowForwardIosIcon />}>
-                                    COSTUMISE PLAN
-                                </Button>
-                            </ThemeProvider>
+                        <div className="hostingTypes-section-bottom-card-bottom">
+                            <p>Get started at</p>
+                            <span>
+                                $7.99/
+                                <p>month</p>
+                            </span>
+                            <div className="hostingTypes-section-bottom-card-bottom-btn">
+                                <ThemeProvider theme={theme}>
+                                    <Button color="neutral" variant="contained" endIcon={<ArrowForwardIosIcon />}>
+                                        COSTUMISE PLAN
+                                    </Button>
+                                </ThemeProvider>
+                            </div>
                         </div>
                     </div>
 
-                    <div className="hostingTypes-section-bottom-card">
-                        <img src={wp} alt="shared icon" />
-                        <h3>WORDPRESS HOSTING</h3>
-                        <p>
-                            With low cost and high variety<br />
-                            of tools, plugins of your choice
-                        </p>
+                    <div onMouseEnter={() => setShow3(!show)}
+                        onMouseLeave={() => setShow3(false)}
+                        className={show3 == true ? "hostingTypes-section-bottom-card" : "hostingTypes-section-bottom-card-hide"}
+                    >
+                        <div className="hostingTypes-section-bottom-card-top">
+
+                            <img src={wp} alt="vps icon" />
+                            <h3>WORDPRESS HOSTING</h3>
+                            <p>
+                                With low cost and high variety<br />
+                                of tools, plugins of your choice
+                            </p>
+                        </div>
                         <hr />
-                        <p>Get started at</p>
-                        <span>
-                            $13.99/
-                            <p>month</p>
-                        </span>
-                        <div className="hostingTypes-section-bottom-card-btn">
-                            <ThemeProvider theme={theme}>
-                                <Button color="neutral" variant="contained" endIcon={<ArrowForwardIosIcon />}>
-                                    COSTUMISE PLAN
-                                </Button>
-                            </ThemeProvider>
+                        <div className="hostingTypes-section-bottom-card-bottom">
+                            <p>Get started at</p>
+                            <span>
+                                $13.99/
+                                <p>month</p>
+                            </span>
+                            <div className="hostingTypes-section-bottom-card-bottom-btn">
+                                <ThemeProvider theme={theme}>
+                                    <Button color="neutral" variant="contained" endIcon={<ArrowForwardIosIcon />}>
+                                        COSTUMISE PLAN
+                                    </Button>
+                                </ThemeProvider>
+                            </div>
                         </div>
                     </div>
+
 
                 </div>
             </div>
-        </Fragment>
+        </Fragment >
     );
 };
 
