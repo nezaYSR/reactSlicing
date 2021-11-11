@@ -45,6 +45,7 @@
                 }
                 &-form {
                     @include row();
+                    // width: 85%;
                     justify-content: space-between;
                     &-set {
                         @include row();
@@ -76,7 +77,8 @@
                     position: absolute;
                     // width: 40rem;
                     width: 40%;
-                    top: 7em;
+                    // top: 7em;
+                    top: 9em;
                     right: 8em;
                 }
             }
